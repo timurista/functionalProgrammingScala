@@ -19,5 +19,18 @@ Inventor of Fortran found that imperative programming was running out of steam. 
 ## Theory?
 1 or more data types, operations on them, but not mutations. Idea of immutability cna be found in Strings (Java concept).
 
+## Functional programming
+1. Avoid mutations
+2. Abstract and compose functions
 
+### Restricted
+no mutable variables, no loops, etc.
 
+### General
+functions in program, certain functions can be composed etc.
+
+### First class citizens
+As a first-class citizen, you can define functions anywhere, can pass functions as parameters and return them as functions. You can even compose functions.
+
+## Functional History
+Lisp was invented in 159, then 1970s-1990s which haskel. Clojure, Scala in last 10 years.
