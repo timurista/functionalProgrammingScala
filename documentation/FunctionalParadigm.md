@@ -1,0 +1,6 @@
+
+# Discussion
+
+## Functional Paradigm differences
+
+
