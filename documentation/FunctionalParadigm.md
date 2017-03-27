@@ -3,16 +3,9 @@
 
 ## Functional Paradigm differences
 
-imperative programming (Java and C)
-logic programming
+Imperative programming (Java and C) can be thought of as giving explicit instructions per word written in the language. Traditionally, oop existed in imperative programming models (thinking of classes in Java).
 
-but oop, it can be combined well with both imperative programming or functional / logic programming.
-
-## imperative programming
-
-Changes mutable variables, assigns, if-then-else, loops, breaks, etc.
-
-## Problem with this approach?
+## Problem with the imperative approach?
 It doesn't always scale well because a mutable variable typically corresponds to the size of a memory cell. 
 
 ### Von nuemann computer architecture
