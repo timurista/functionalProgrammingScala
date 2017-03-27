@@ -1,3 +1,4 @@
+
 # Functional Programming in Scala
 
 ## What is Scala?
