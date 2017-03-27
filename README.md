@@ -11,5 +11,5 @@ This repo is for self study and those wishing to develop their skills in scala a
 
 ## Helpful resources
 - [Programming in Scala version 2](http://ccfit.nsu.ru/~den/Scala/programming_in_scala_2nd.pdf)
+- [Scala API](http://www.scala-lang.org/api/current/)
 - [Structure and Interpreation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html)
-
