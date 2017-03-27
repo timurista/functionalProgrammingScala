@@ -10,7 +10,7 @@ Examples will be shown in the relevant folders and modules.
 This repo is for self study and those wishing to develop their skills in scala and understand the differences between functional and OOP languages.
 
 ## DOCUMENTATION
-- [Functional Paradigm](documentation/FunctionalParadigm.md)
+- [Functional Paradigm](documentation/FunctionalParadigm/)
 
 ## Extra Helpful resources
 - [Programming in Scala version 2](http://ccfit.nsu.ru/~den/Scala/programming_in_scala_2nd.pdf)
