@@ -34,3 +34,9 @@ As a first-class citizen, you can define functions anywhere, can pass functions 
 
 ## Functional History
 Lisp was invented in 159, then 1970s-1990s which haskel. Clojure, Scala in last 10 years.
+
+``` 
+Why is it gaining popularity
+```
+
+Great for cloud computing, exploiting multicore processing.
