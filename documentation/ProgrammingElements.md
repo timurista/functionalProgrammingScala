@@ -25,6 +25,8 @@ In practice, call by value tends to be much faster for development purposes. Thi
 ### Scala forcing call by name
 You can force this behavior by using the arrow. `def constOne(x: Int, y: => Int) = 1`.
 
+# Call By Value  / By Name in Assignments
+Right hand side of a value definition aka an assignment is also called by-value. So `val x = 2; val y = square(x);` evaluates right here when y is initialized and assigned a value. But `def x = loop` will only assign by name, so that when you write x it will evaluate x at that time not in it's definition.
 
 
 
