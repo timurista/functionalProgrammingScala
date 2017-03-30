@@ -19,6 +19,12 @@ def text(x: Int, y: Int) = x * x;
     test(3+4, 2*4) // same complexity
 ```
 
+## Scala uses call by value
+In practice, call by value tends to be much faster for development purposes. This is mainly because call by name requires the repeated evaluation of expressions when evaluating the code. Also, unused variables are typically flagged as a problem by linters or compile-time errors, so the advantage saved by not evaluating them is usually not realized.
+
+### Scala forcing call by name
+You can force this behavior by using the arrow. `def constOne(x: Int, y: => Int) = 1`.
+
 
 
 
