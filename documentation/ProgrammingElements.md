@@ -14,7 +14,7 @@ To open REPL for running scala, make sure you have sbt installed (`brew install 
 ```javascript
 def text(x: Int, y: Int) = x * x;
     test(2,3) // same complexity in terms of reduction time
-    tet(3+4, 8) // call by name takes 1 more step (3+4) * (3+4), so call by value is faster test(7,8) -> 7*7
+    test(3+4, 8) // call by name takes 1 more step (3+4) * (3+4), so call by value is faster test(7,8) -> 7*7
     test(7, 2*4) // 2*4 is never used so call by name is faster no need to evaluate second argumnet
     test(3+4, 2*4) // same complexity
 ```
@@ -25,7 +25,7 @@ In practice, call by value tends to be much faster for development purposes. Thi
 ### Scala forcing call by name
 You can force this behavior by using the arrow. `def constOne(x: Int, y: => Int) = 1`.
 
-# Call By Value  / By Name in Assignments
+## Call By Value  / By Name in Assignments
 Right hand side of a value definition aka an assignment is also called by-value. So `val x = 2; val y = square(x);` evaluates right here when y is initialized and assigned a value. But `def x = loop` will only assign by name, so that when you write x it will evaluate x at that time not in it's definition.
 
 
