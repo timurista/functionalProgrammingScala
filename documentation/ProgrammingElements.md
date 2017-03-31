@@ -46,7 +46,7 @@ Here's the full scala iplementation:
 ```javascript
 object session {
   def abs(x: Double) = if (x < 0) -x else x;
-  
+
   def sqrtIter(guess: Double, x: Double): Double =
     if(isGoodEnough(guess, x)) guess
     else sqrtIter(improve(guess, x), x)
@@ -63,4 +63,13 @@ object session {
   sqrt(2)
   sqrt(4)
 }
+```
+
+## How to improve? 
+The isGoodEnough test is not very precise for small number and can lead to infinite loop for very large numbers. This is because the size of x compared to the value of 0.001 could be much smaller even if you subtract out the guess. This would lead to an incorrect return value. Alternatively, the value of x could be so large that the computation runs into a memory overflow issue.
+
+So you need to make the abs value relative to x. You can do this by simply dividing the absolute value by x: 
+```javascript
+def isGoodEnough(guess: Double, x: Double) =
+    abs(guess * guess - x) / x < 0.001
 ```
