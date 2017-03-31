@@ -28,5 +28,14 @@ You can force this behavior by using the arrow. `def constOne(x: Int, y: => Int)
 ## Call By Value  / By Name in Assignments
 Right hand side of a value definition aka an assignment is also called by-value. So `val x = 2; val y = square(x);` evaluates right here when y is initialized and assigned a value. But `def x = loop` will only assign by name, so that when you write x it will evaluate x at that time not in it's definition.
 
+## Square Root using Newton's approximation
 
+A recursive approach with scala. Here you have to declare the return type to break the cycle.
+
+```javascript
+def sqrtIter(guess: Double, x: Double): Double =
+    if (isGoodEnough(guess, x)) guess
+    else sqrtIter(imrpove(guess, x), x)
+    ...
+```
 
