@@ -30,7 +30,7 @@ Right hand side of a value definition aka an assignment is also called by-value.
 
 ## Square Root using Newton's approximation
 
-A recursive approach with scala. Here you have to declare the return type to break the cycle.
+A recursive approach with scala. Here you have to declare the return type to break the cycle of analysis of the return value of the right hand method.
 
 ```javascript
 def sqrtIter(guess: Double, x: Double): Double =
