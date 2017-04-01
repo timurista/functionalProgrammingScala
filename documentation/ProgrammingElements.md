@@ -84,8 +84,9 @@ function myFunc() {
   ...
 }
 ```
+
 And in scala
-```javascript
+```scala
 def myFunc(guess: Double) {
   def subFunc(guess: Double) {
     ...
