@@ -3,24 +3,19 @@ object Main {
     * Exercise 2
     */
   def balance(chars: List[Char]): Boolean = {
-//    println("CHARS> " + chars.mkString("") + " HAS PARENS " + chars.contains('('))
+    def findBalance(chars: List[Char], numOpens: Int): Boolean = {
+      if (chars.isEmpty) return numOpens == 0
+      val n =
+        if (chars.head == '(') numOpens + 1
+        else if (chars.head == ')') numOpens - 1
+        else numOpens
 
-    def findBalance(chars: List[Char],
-                    numParensOpen: Int): Boolean = {
-        if (chars.isEmpty) return numParensOpen == 0
-        val h = chars.head
-        val num =
-          if (h == '(') numParensOpen + 1
-          else if (h == '(') numParensOpen - 1
-          else numParensOpen
-        if (num >= 0) findBalance(chars, num)
-        else return false
+      if (n >= 0) findBalance(chars.tail, n)
+      else return false
     }
 
-    findBalance(chars, 0);
+    findBalance(chars, 0)
   }
-
-
   balance("())(".toList)
   balance(":-)".toList)
 //  balance("(if (zero? x) max (/ 1 x))".toList)
