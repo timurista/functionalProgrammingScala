@@ -73,3 +73,23 @@ So you need to make the abs value relative to x. You can do this by simply divid
 def isGoodEnough(guess: Double, x: Double) =
     abs(guess * guess - x) / x < 0.001
 ```
+
+## Blocks and Lexical Scoping
+You can nest functions in order to not pollute the name space. You can do this with a block of code. Javascript does it like this:
+```javascript
+function myFunc() {
+  function subFunc() {
+    ...
+  }
+  ...
+}
+```
+And in scala
+```javascript
+def myFunc(guess: Double) {
+  def subFunc(guess: Double) {
+    ...
+  }
+  ...
+}
+```
