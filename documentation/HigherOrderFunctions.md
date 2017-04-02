@@ -20,5 +20,5 @@ a + b = c
 ```
 
 But you see the common pattern? Can we factor this out.
-[repeated sum](https://latex.codecogs.com/gif.latex?\sum&space;f)
+![repeated sum](https://latex.codecogs.com/gif.latex?\sum&space;f)
 
