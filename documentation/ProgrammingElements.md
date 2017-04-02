@@ -94,3 +94,34 @@ def myFunc(guess: Double) {
   ...
 }
 ```
+
+## Handling Recursion
+To help thinking in recursive terms, a visualization program like [visualgo](https://visualgo.net/recursion) can demonstrate the different stages of an algorithm. Another way to help is to trace through a recursive program.
+
+### Example
+```scala
+def f(n: Int): Int =
+  if (n <= 1 ) 1
+else n* f(n-1)
+```
+For n = 3
+- Step 1
+```
+f(3) => if (3 <= 1) 1 // false
+    => 3 * f(3-1)
+``
+Step 2
+```
+f(2) => if (3<=1) 1 // false
+    => 2* f(2-1)
+```
+Step 3
+```
+f(1) => if (1<=1) 1 // true
+```
+Return to step 2, then to step 3
+```
+f(3) => 3 * 2 * 1 = 6
+```
+
+It's also helpful to remember that programs evaluate left to right, so if you see `f(n-1) + f(n-2)`, you will evaluate the full path for `f(n-1)` then you will evalaute the full path for `f(n-2)`.
