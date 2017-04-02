@@ -15,10 +15,7 @@ def sumFactorial(a: int, b: Int): Int =
     if (a > b ) 0 else fact(a) + sumFactorials(a +1, b)
 ```
 
-```math #a+b
-a + b = c
-```
-
 But you see the common pattern? Can we factor this out.
-![repeated sum](https://latex.codecogs.com/gif.latex?\sum&space;f)
+
+![repeated sum](https://latex.codecogs.com/gif.latex?\sum&space;f(x))
 
