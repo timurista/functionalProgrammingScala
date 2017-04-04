@@ -58,10 +58,34 @@ def sumCubes(a: Int, b: Int) = sum(x => x * x * x, a, b)
 ```scala
 def sum(f: Int => Int)(a: Int, b: Int): Int = {
   def loop(a: Int, acc: Int): Int = {
-    if (???) ???
-    else loop(???, ???)
+    if (a > b) acc
+    else loop(a+1, f(a) + acc)
   }
-  loop(???, ???)
+  loop(a, 0)
 }
 ```
+1. loop with a as starting value
+2. then 0 as value of accumulator
+3. then if a > terminating value, return accumulator
+4. else run loop, incremeting a and adding the result of f(a) to the accumualtor
+
+## Currying
+Above, each function takes two params. But can't we rewrite them to make even shorter?
+
+```scala
+def sum(f: Int => Int): (Int, Int) => Int = {
+    def sumF(a: Int, b: Int): Int=
+        if (a>b) 0
+        else f(a) + sumF(a +1, b)
+    sumF
+}
+```
+
+so it defines sumF, then returns it from sum. Therefore sum is a function which returns another function. 
+
+### Avoiding middle man
+sum(cube) (1, 10)
+
+This applies sum function to the cube function. Sum cube is therefore the same as sumCubes, then we apply to arguments (1, 10). Why do this? You can now have 2 parameters sum(cube)(1,10) and the second parameter (1,10) can be deferred to use later. Another example of syntactic sugar.
+
 
