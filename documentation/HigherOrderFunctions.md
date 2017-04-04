@@ -49,3 +49,19 @@ Anonymous functions can replace our functions and make this easier to read. `(x:
 ## Syntatic Sugar
 Anonymous function (x1: T1... xn) can always be expressed like def f(x1: T1...) = E;f. Because they can always be rewritten using larger function body, then it is just **syntactic sugar**.
 
+```scala
+def sumInts(a: Int, b:Int) = sum(x => x, a, b)
+def sumCubes(a: Int, b: Int) = sum(x => x * x * x, a, b)
+```
+
+## Tail Recursive Sum
+```scala
+def sum(f: Int => Int)(a: Int, b: Int): Int = {
+  def loop(a: Int, acc: Int): Int = {
+    if (???) ???
+    else loop(???, ???)
+  }
+  loop(???, ???)
+}
+```
+
