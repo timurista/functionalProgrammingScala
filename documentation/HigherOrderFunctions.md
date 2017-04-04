@@ -88,4 +88,34 @@ sum(cube) (1, 10)
 
 This applies sum function to the cube function. Sum cube is therefore the same as sumCubes, then we apply to arguments (1, 10). Why do this? You can now have 2 parameters sum(cube)(1,10) and the second parameter (1,10) can be deferred to use later. Another example of syntactic sugar.
 
+### Currying syntax
+`def f(arg1)...f(argsn-1)(argsn) = E`
+is the same as
+`def f = (args => (args2 =>... (argsn => E)))`
+
+1. Write product?
+```scala
+  def product(f: Int => Int)(a: Int, b: Int): Int =
+    if (a > b) 1 else f(a) * product(f)(a + 1, b)
+  product(x => x)(3, 7);
+
+  def fact(a: Int): Int =
+    product(x => x)(1, a)
+
+  fact(3)
+  fact(5)
+```
+
+But can we replace the product in terms of another more general function? Yes...
+```scala
+  // we want map reduce
+  def mapReduce(f: Int => Int,
+                combine: (Int, Int) => Int,
+                zero: Int)(a: Int, b:Int): Int =
+    if (a > b ) zero
+    else combine(f(a), mapReduce(f, combine, zero)(a,b))
+
+  def product2(f: Int => Int)(a: Int, b: Int): Int =
+    mapReduce(f, (x,y) => x*y, 1)(a, b)
+```
 
