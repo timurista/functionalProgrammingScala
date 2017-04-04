@@ -38,3 +38,14 @@ def cube(x: Int): Int = x*x*x
 def fact(x: Int): Int = if(x==0) 1 else fact(x-1)
 ```
 
+## Function Type
+A => B, takes argument of type A and returns result of type B.
+
+### Problem: Now we have a number of tedius smaller functions
+Anonymous functions can replace our functions and make this easier to read. `(x: Int) => x*x*x`
+
+*Note* type of parameter can be ommitted if it can be inferred.
+
+## Syntatic Sugar
+Anonymous function (x1: T1... xn) can always be expressed like def f(x1: T1...) = E;f. Because they can always be rewritten using larger function body, then it is just **syntactic sugar**.
+
