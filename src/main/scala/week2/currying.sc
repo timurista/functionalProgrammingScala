@@ -22,11 +22,13 @@ object main {
   def mapReduce(f: Int => Int,
                 combine: (Int, Int) => Int,
                 zero: Int)(a: Int, b:Int): Int =
-    if (a > b ) zero
-    else combine(f(a), mapReduce(f, combine, zero)(a,b))
+    if (a > b) zero
+    else combine(f(a), mapReduce(f, combine, zero)(a + 1,b))
 
   def product2(f: Int => Int)(a: Int, b: Int): Int =
     mapReduce(f, (x,y) => x*y, 1)(a, b)
   //  def common(f: Int =>)
 //  def fact(x => x)(1,2)
+
+  product2(x => x*x)(3, 4)
 }
