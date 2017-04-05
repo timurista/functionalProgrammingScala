@@ -9,7 +9,7 @@
 [debug] == resolving dependencies for default#scala$sources_2.12;1.0 [compile]
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.12.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b10674b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f9d4860
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.1
 [debug] 	found org.scala-lang#scala-library;2.12.1 in sbt-chain
 [debug] 	[2.12.1] org.scala-lang#scala-library;2.12.1
@@ -45,7 +45,7 @@
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang#scala-library;2.12.1 [test->master]
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scalatest#scalatest_2.12;3.0.0 [test->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.12;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6529bfbb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6597a912
 [debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.12;3.0.0
 [debug] 	found org.scalatest#scalatest_2.12;3.0.0 in sbt-chain
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scalatest#scalatest_2.12;3.0.0 [test->runtime]
@@ -53,7 +53,7 @@
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scalatest#scalatest_2.12;3.0.0 [test->master]
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scalactic#scalactic_2.12;3.0.0 [test->default(compile)]
 [info] Resolving org.scalactic#scalactic_2.12;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d2bb213
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a35531b
 [debug] sbt-chain: module revision found in cache: org.scalactic#scalactic_2.12;3.0.0
 [debug] 	found org.scalactic#scalactic_2.12;3.0.0 in sbt-chain
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scalactic#scalactic_2.12;3.0.0 [test->runtime]
@@ -61,7 +61,7 @@
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scalactic#scalactic_2.12;3.0.0 [test->master]
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang#scala-reflect;2.12.0 [test->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.12.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41406850
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a88e4ea
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.0
 [debug] 	found org.scala-lang#scala-reflect;2.12.0 in sbt-chain
 [debug] 	[2.12.0] org.scala-lang#scala-reflect;2.12.0
@@ -70,7 +70,7 @@
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang#scala-reflect;2.12.0 [test->master]
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.12;1.0.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@730447ab
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27790843
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.5
 [debug] 	found org.scala-lang.modules#scala-xml_2.12;1.0.5 in sbt-chain
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->runtime]
@@ -78,7 +78,7 @@
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->master]
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e423bc6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@81d5d4a
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 in sbt-chain
 [debug] == resolving dependencies default#scala$sources_2.12;1.0->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->runtime]
@@ -246,7 +246,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.1!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.1!jline.jar(src)
-[debug] :: resolution report :: resolve 61ms :: artifacts dl 14ms
+[debug] :: resolution report :: resolve 96ms :: artifacts dl 14ms
 [debug] 	report for default#scala$sources_2.12;1.0 compile produced in /Users/tim.urista/workspaces/scala/target/resolution-cache/reports/default-scala$sources_2.12-compile.xml
 [debug] 	report for default#scala$sources_2.12;1.0 runtime produced in /Users/tim.urista/workspaces/scala/target/resolution-cache/reports/default-scala$sources_2.12-runtime.xml
 [debug] 	report for default#scala$sources_2.12;1.0 test produced in /Users/tim.urista/workspaces/scala/target/resolution-cache/reports/default-scala$sources_2.12-test.xml
@@ -260,4 +260,4 @@
 [debug] 	report for default#scala$sources_2.12;1.0 docs produced in /Users/tim.urista/workspaces/scala/target/resolution-cache/reports/default-scala$sources_2.12-docs.xml
 [debug] 	report for default#scala$sources_2.12;1.0 pom produced in /Users/tim.urista/workspaces/scala/target/resolution-cache/reports/default-scala$sources_2.12-pom.xml
 [debug] 	report for default#scala$sources_2.12;1.0 scala-tool produced in /Users/tim.urista/workspaces/scala/target/resolution-cache/reports/default-scala$sources_2.12-scala-tool.xml
-[debug] 	resolve done (61ms resolve - 14ms download)
+[debug] 	resolve done (96ms resolve - 14ms download)
