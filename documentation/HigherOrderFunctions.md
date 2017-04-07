@@ -146,3 +146,6 @@ Now we can define sqrt with functional composition:
 
 ## Categories of Expressions
 An identifier such as x, isGoodEnough. A literal, function applciation, etc.
+
+### Functions and Data.
+x/y expresses rational number. You can use class in scala. class with parameters: `class Rational(x:Int, y:Int).` Scala keeps the names of types and values in different namespaces.
