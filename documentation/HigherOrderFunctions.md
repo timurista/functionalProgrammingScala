@@ -143,3 +143,6 @@ Now we can define sqrt with functional composition:
 
   sqrt(2) // 1.4142...
 ```
+
+## Categories of Expressions
+An identifier such as x, isGoodEnough. A literal, function applciation, etc.
