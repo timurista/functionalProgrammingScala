@@ -9,9 +9,13 @@ object main {
   y.add(y)
   x.less(y)
   x.max(y)
+
+  x add y //infix works too
 //  val strange = new Rational(1, 0)
 //  strange.add(strange)
   new Rational(2)
+
+  new Rational(1, 2).num
 
 
 
