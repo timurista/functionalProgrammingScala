@@ -149,3 +149,6 @@ An identifier such as x, isGoodEnough. A literal, function applciation, etc.
 
 ### Functions and Data.
 x/y expresses rational number. You can use class in scala. class with parameters: `class Rational(x:Int, y:Int).` Scala keeps the names of types and values in different namespaces.
+
+### Symbolic and Alphanumeric identifiers
+In scala, you can use traditional alphanumeric function or method names like x.add(y). Or you can also use synbolic names where you use operator symbol followed by the other symbols.
