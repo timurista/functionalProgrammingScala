@@ -14,6 +14,7 @@ This repo is for self study and those wishing to develop their skills in scala a
 - [Functional Paradigm](documentation/FunctionalParadigm.md)
 - [Programming Elements](documentation/ProgrammingElements.md)
 - [Higher Order Functions](documentation/HigherOrderFunctions.md)
+- [Class Hierarchies](documentation/classHierarchies.md)
 
 ## Extra Helpful resources
 - [Programming in Scala version 2](http://ccfit.nsu.ru/~den/Scala/programming_in_scala_2nd.pdf)
