@@ -11,3 +11,17 @@ You have to explicitly override base methods of an abstract class which are defi
 
 ## Objects vs Classes
 Classes are blueprints and need instantiation via the new method. There can also be different instance of a clas in program. However an object exists as only one instance, so you do not need to use the new keyword to instantiate a new object. Simply write the name of the object, so `new MyObject` just becomes `MyObject`.
+
+## Traits
+Like an abstract class
+```scala
+trait Planar {
+    def height: Int
+    def width: Int
+    def surface = height * width
+}
+```
+Classes, etc. can have many traits they inherit from. Traits are like interfaces in Java but more powerful because they contain fields and concrete methods vs interfaces with only concrete methods. Clases have params but traits do not.
+
+##Hierarchy
+scala.Any, AnyRef --> alias of Object, AnyVal. 

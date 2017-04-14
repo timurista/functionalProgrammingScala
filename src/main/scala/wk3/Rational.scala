@@ -1,4 +1,4 @@
-package week3
+package wk3
 
 /**
   * Created by tim.urista on 4/13/17.
