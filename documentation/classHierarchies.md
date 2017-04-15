@@ -23,5 +23,13 @@ trait Planar {
 ```
 Classes, etc. can have many traits they inherit from. Traits are like interfaces in Java but more powerful because they contain fields and concrete methods vs interfaces with only concrete methods. Clases have params but traits do not.
 
-##Hierarchy
+## Hierarchy
 scala.Any, AnyRef --> alias of Object, AnyVal. 
+
+## Applying Traits
+```scala
+package week4
+
+trait IntList ...
+class Cons(val head)
+```
