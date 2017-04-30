@@ -33,7 +33,6 @@ object mergesort {
         case(x :: xs1, y :: ys1) =>
           if (ord.lt(x, y)) x :: merge(xs1, ys)
           else y :: merge(xs, ys1)
-
       }
 
       val (fst, snd) = xs splitAt n
@@ -66,6 +65,6 @@ object mergesort {
    * figure out which method to use
    * for ordering based on inference of the two types you pass in
    * Search for defition with a type compatible of t, and is visible at function call
-   * 
+   *
    */
 }
