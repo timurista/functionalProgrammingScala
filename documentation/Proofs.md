@@ -91,6 +91,49 @@ induction step, x::xs
 = x :: xs // by inductive hypothesis
 
 
-## Larger Proofs
+## Larger Proofs - Law of Reverse
+Nil.reverse = Nil // 1st clause
+(x :: xs).reverse = xs.reverse ++ List(x) // second clause
 
-### Law of Reerse
+We'd like to prove the following:
+xs.reverse.reverse = xs
+
+### Base case
+Nil.reverse.reverse
+=   Nil.reverse // by 1
+=   Nil // by 1
+### Inductive step
+(x :: xs).reverse.reverse
+=   (xs.reverse ++ List(x)).reverse // by 2
+
+// nothing else we can do seems obvious, so let's look at right hand side
+
+x :: xs = x :: xs.reverse.reverse // by inductive hypothesis
+
+(xs.reverse ++ List(x)).reverse = x :: xs.reverse.reverse
+
+// induction doesn't work, we need to generalize the equation
+(ys ++ List(x)).reverse = x :: ys.reverse
+// where ys = x.reverse
+
+Base case
+ys = Nil
+(Nil ++ List(x)).reverse
+= List(x).reverse // 1
+= (x :: Nil).reverse // definition of List
+    = Nil reverse ++ List(x)
+= Nil ++ (x :: Nil)
+= x :: Nil
+= x :: Nil.reverse
+
+So Now we need to show
+((y :: yx) ++ List(x)).reverse // to show = x :: y(y :: ys).reverse
+= (y :: (ys ++ List(x))).reverse // by 2 of ++, using unfold step
+= (ys ++ List(x)).reverse ++ List(y) // by 2 of reserve
+= (x :: ys.reverse) ++ List(y) // by inductive step
+= x :: (y :: ys).reverse // by 2 of reverse fold step
+
+this proof method is sometimes called fold/unfold method
+
+
+
