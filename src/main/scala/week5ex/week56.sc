@@ -40,4 +40,11 @@ object main {
   pack(data)
   encode(data)
 
+  def sum(xs: List[Int]) =
+    (0 :: xs) reduceLeft ((x, y) => x + y) // also (_ + _)
+  def product(xs: List[Int]) =
+    (1 :: xs) reduceLeft((x, y) => x * y) // also (_ * _)
+
+  // what does it mean for program to be correct?
+
 }
